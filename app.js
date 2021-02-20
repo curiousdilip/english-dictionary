@@ -24,10 +24,16 @@ searchBtn.addEventListener('click',function(e){
 async function getData(word){
     // ajax call
     const response = await fetch(`https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${apiKey}`);
-
     const data = await response.json();
+
+    console.log(data);
+
+ 
     // if empty result
     if(!data.length){
+        notFound.innerText = 'No Result Found!'
         return;
     }
+
+    console.log(data);
 }
