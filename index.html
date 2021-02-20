@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Dictionary</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="container">
+            <h1>Dictionary</h1>
+        </div>
+    </nav>
+
+    <section class="input">
+        <h2>Find any Word :)</h2>
+        <div class="form_wrap">
+            <div class="input_wrap">
+                <input type="text" id="input" placeholder="type a word">
+                <button id="search">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="data container">
+        <span class="loading">Loading....</span>
+        <p class="def">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nulla dolore et consequatur expedita tempore soluta ullam impedit quia tenetur omnis facere minima ducimus culpa, accusantium quidem, beatae praesentium est.</p>
+        <div class="audio">
+
+        </div>
+        <div class="not_found"></div>
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
